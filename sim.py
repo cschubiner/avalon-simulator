@@ -76,6 +76,8 @@ class Game:
             return getPlayersFromString('34455', roundNum) #avalon
         elif np == 10:
             return getPlayersFromString('34455', roundNum) #avalon
+        elif np == 11:
+            return getPlayersFromString('34455', roundNum) #avalon
 
     def failsRequiredForQuest(self,roundNum):
         # if roundNum == 1:
@@ -130,7 +132,7 @@ class Game:
 wins = 0
 totalGames = 20000
 for i in range(totalGames):
-    g = Game(4, 2)
+    g = Game(6, 4)
     wins += g.playGame()
 
 
